@@ -22,7 +22,7 @@ public class Calculator2 {
 		System.out.println("Welcome to the Calculator!\n");
 		System.out.println("Enter what operation you would like to preform. ");
 		System.out.println("Addition (add), Subtraction (sub),"
-				+ " \nMultiplication (mult), and Division (div).");
+				+ " \nMultiplication (mult), Division (div), Powers(pow).");
 		
 		String operation = input.next();
 		
@@ -35,21 +35,25 @@ public class Calculator2 {
 		case "add":     //This will apply the following if the case is true
 			System.out.printf("%f added to %f equals:\n %.2f", num1, num2, add(num1, num2));
 			break; // break means that no other cases will run
-		case "sub":
-			sub(num1, num2);
-			break;
+//		case "sub":
+//			System.out.printf()); sub(num1, num2);  
+//			
+			//START HERE TO CONTINUE
+//			
+//			break;
 		case "mult":
 			mult(num1, num2);
 			break;
 		case "div":
 			div(num1, num2);
 			break;
+		
+		default:
+			System.out.println("Invalid Entry");
 		case "pow":
 //			findPow(num1, num2);
 			System.out.println(findPow(num1, num2)); //This is the way to do the Modules !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			break;
-		default:
-			System.out.println("Invalid Entry");
 		}
 		
 
