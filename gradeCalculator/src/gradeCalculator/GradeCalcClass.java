@@ -15,7 +15,7 @@ public class GradeCalcClass {
 	
 	System.out.println(math(grade));
 	
-	input.close();
+	
 	}
 
 
