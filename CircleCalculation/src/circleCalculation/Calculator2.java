@@ -35,25 +35,24 @@ public class Calculator2 {
 		case "add":     //This will apply the following if the case is true
 			System.out.printf("%f added to %f equals:\n %.2f", num1, num2, add(num1, num2));
 			break; // break means that no other cases will run
-//		case "sub":
-//			System.out.printf()); sub(num1, num2);  
-//			
+		case "sub":
+			System.out.printf()); sub(num1, num2);  
+			
 			//START HERE TO CONTINUE
-//			
-//			break;
+			
+			break;
 		case "mult":
 			mult(num1, num2);
 			break;
 		case "div":
 			div(num1, num2);
 			break;
-		
-		default:
-			System.out.println("Invalid Entry");
 		case "pow":
 //			findPow(num1, num2);
 			System.out.println(findPow(num1, num2)); //This is the way to do the Modules !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			break;
+		default:
+			System.out.println("Invalid Entry");
 		}
 		
 

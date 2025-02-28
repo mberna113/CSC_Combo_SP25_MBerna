@@ -2,12 +2,12 @@ package Loops;
 
 import java.util.Scanner;
 
-public class ForFibonacci {
+public class WhileFibonacci {
 
 	public static void main(String[] args) {
-
-		//start a scanner just to change it up and get more practice;
-		Scanner input = new Scanner(System.in);
+		
+		//Start Scanner and print starting message
+ 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a positive integer (above 3) to find the Fibonacci sequence up to that number (10 is the assignment):");
 
 		
@@ -20,23 +20,26 @@ public class ForFibonacci {
 			//Check to see if it is a positive number;
 			if (numInput2 > 0) {
 				
-				//initialize total outside of for loop; 
+				//initialize total outside of for loop 
 				int total = 0;
 				int first = 0;
 				int second = 1;
+				int i = 0;
 				
 				System.out.println("0");
 				System.out.println("1");
 				//---------------------------------------------------------------------------
-				//run for loop starting with numInput and running through numInput times
-				for (int i = 0; i <= numInput2; i++) {
-					
+				while (i <= numInput2) {
 					total = first + second;
 					System.out.println(total);
 					first = second;
 					second = total;
 					
+					//Changer
+					i++;
+									
 				};
+				
 				//-----------------------------------------------------------------------------
 				
 				

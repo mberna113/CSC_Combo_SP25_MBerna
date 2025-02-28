@@ -125,10 +125,10 @@ public class MidtermPart1 {
 //		
 		//----------------------------------------------------------------
 
-		boolean even = false;
-		if (even = true) {
-			System.out.println("it is even!");
-		}
+//		boolean even = false;
+//		if (even = true) {
+//			System.out.println("it is even!");
+//		}
 		//System.out.println((even ?"true": "false"));
 		
 		
