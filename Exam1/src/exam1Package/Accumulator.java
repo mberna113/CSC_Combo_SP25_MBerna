@@ -23,6 +23,6 @@ public class Accumulator {
 
 		System.out.printf("The sum of all of the inputs is: %.2f.", sum);
 
-	}// end main
+	}// end main 
 
 }
