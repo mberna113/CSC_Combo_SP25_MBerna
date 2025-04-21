@@ -2,6 +2,7 @@ package MoviesPackage;
 
 public class MoviesMB {
 
+///--------------------------------------------------------------Initialize variables -------------------------------------------------------------------------------
 
 	private String nameofMovie = "";
 	private String director = "";
@@ -13,6 +14,8 @@ public class MoviesMB {
 	private Actor[] actorlist = new Actor[100];
 	private int numofActors = 0;
 		
+	
+///--------------------------------------------------------------Constructors -------------------------------------------------------------------------------
 	
 public MoviesMB() {  //Default Constructor (typed out)
 		this.nameofMovie = "";
@@ -34,8 +37,11 @@ public MoviesMB(String nameofMovie, String director, int minutes, double rating,
 	this.rating = rating;
 	this.rottenTomatoScore = rottenTomatoScore;
 	this.numofActors = numofActors;
+	this.actorlist = Actor(numofActors);
 }
 
+
+///------------------------------------------------------------Getters and Setters --------------------------------------------------------------------
 public String getNameofMovie() {
 	return nameofMovie;
 }
@@ -93,8 +99,6 @@ public void setNumofActors(int numofActors) {
 
 
 
-
-
 public Actor[] getActorlist() {
 	return actorlist;
 }
@@ -108,8 +112,12 @@ public void setActorlist(Actor[] actorlist) {
 
 
 
-@Override
 
+
+
+///--------------------------------------------------------------toString method for printing -----------------------------------------------------------
+
+@Override
 public String toString() {
 	//return "MoviesMB [nameofMovie=" + nameofMovie + ", director=" + director + ", minutes=" + minutes + ", rating="
 	//		+ rating + ", rottenTomatoScore=" + rottenTomatoScore + "]";
