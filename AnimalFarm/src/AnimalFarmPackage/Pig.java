@@ -4,14 +4,19 @@ public class Pig extends Animal{
 	
 	
 	private String color;
+	private String type;
 
 	public Pig(int height, int weight, String name, String color) {
 		super(height, weight, name);
 		this.color = color;
+		this.type = "Pig";
 	}
 	
+	public String getType() {
+		return this.type;
+	}
 	
-
+	@Override
 	public String getColor() {
 		return color;
 	}
